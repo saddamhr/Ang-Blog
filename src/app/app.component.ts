@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appName = 'Blog App';
-  currentVal="";
-  getVal(val) {
-    console.warn(val)
-    this.currentVal = val
-  }
+  color = 'golden';
 }

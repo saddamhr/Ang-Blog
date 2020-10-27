@@ -1,5 +1,18 @@
-<h1>Important Event in Angular</h1>
-<input type="text" #box >
-<button (click)="getVal(box.value)">Get Value</button>
-
-<h2>{{currentVal}}</h2>
+<h1>Switch Case in Angular</h1>
+<div [ngSwitch]='color'>
+    <h2 style="color: red;" *ngSwitchCase="'red'">
+        Red Color
+    </h2>
+    <h2 style="color: green;" *ngSwitchCase="'green'">
+        Green Color
+    </h2>
+    <h2 style="color: blue;" *ngSwitchCase="'blue'">
+        Blue Color
+    </h2>
+    <h2 style="color: yellow;" *ngSwitchCase="'yellow'">
+        Yellow Color
+    </h2>
+    <h2 style="color: gray;" *ngSwitchDefault>
+        Default Color
+    </h2>
+</div>
