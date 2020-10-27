@@ -7,14 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appName = 'Blog App';
-  name = 'Saddam Rakib';
-  getName() {
-    return this.name
+  currentVal="";
+  getVal(val) {
+    console.warn(val)
+    this.currentVal = val
   }
-  obj = {
-    name: 'Rakib',
-    age: 20
-  }
-  arr = ['Masud', 'Taifur']
-  siteURL = window.location.href
 }
