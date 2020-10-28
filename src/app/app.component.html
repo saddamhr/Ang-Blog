@@ -1,18 +1,12 @@
-<h1>Switch Case in Angular</h1>
-<div [ngSwitch]='color'>
-    <h2 style="color: red;" *ngSwitchCase="'red'">
-        Red Color
-    </h2>
-    <h2 style="color: green;" *ngSwitchCase="'green'">
-        Green Color
-    </h2>
-    <h2 style="color: blue;" *ngSwitchCase="'blue'">
-        Blue Color
-    </h2>
-    <h2 style="color: yellow;" *ngSwitchCase="'yellow'">
-        Yellow Color
-    </h2>
-    <h2 style="color: gray;" *ngSwitchDefault>
-        Default Color
-    </h2>
-</div>
+<h1>Simple Form in Angular</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getValues(simpleForm.value)">
+    <input type="text" ngModel name="user" placeholder="Enter usernmae">
+    <br><br>
+    <input type="text" ngModel name="age" placeholder="Enter age">
+    <br><br>
+    <input type="text" ngModel name="address" placeholder="Enter address">
+    <br><br>
+    <input type="password" ngModel name="password" placeholder="Enter password">
+    <br><br>
+    <button>Get User Value</button>
+</form>

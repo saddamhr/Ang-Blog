@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appName = 'Blog App';
-  color = 'golden';
+  getValues(val) {
+    console.log(val)
+  }
 }
